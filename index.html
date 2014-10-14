@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>kta</title>
+
+    <link rel="stylesheet" href="css.css"/>
+</head>
+    <body>
+
+        <header>
+            <div class="container">
+                <h1>Todos</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <input id="inputText" type="text" name="todoText" class="todo-input" placeholder="Enter your todo..."/>
+                <button id="btnAdd" class="add-btn">ADD</button>
+            </div>
+
+            <div class="container">
+                <label class="todos-text">Todos</label>
+                <label class="dones-text">Dos</label>
+            </div>
+            <div class="container todos-dones">
+                <fieldset>
+                    <legend>Status</legend>
+                    <ul class="todo" id="todo"></ul>
+                    <ul class="done" id="done"></ul>
+                </fieldset>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <div id="errorMessage" class="validation" hidden="hidden">
+            <main>
+                <p> No debe estar en blanco!</p>
+            </main>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
